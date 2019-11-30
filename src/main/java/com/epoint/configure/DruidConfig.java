@@ -14,6 +14,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 自定义配置
+ * 能够实现对数据源的监控
+ * 以及对web请求拦截，css,js,druid的请求除外
+ */
 @Configuration
 public class DruidConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
